@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="414dp"
+        android:numColumns="10" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gridView"
+        android:layout_alignStart="@+id/list"
+        android:layout_alignRight="@id/gridView"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="203dp"
+        android:layout_marginRight="247dp"
+        android:text="Continuous"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridView" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="26dp"
+        android:layout_toRightOf="@id/button"
+        android:text="Guess by Guess"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridView" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="375dp"
+        android:layout_height="165dp"
+        android:layout_below="@+id/gridView"
+        android:layout_alignLeft="@id/gridView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="9dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="159dp"
+        android:layout_height="29dp"
+        android:layout_below="@id/button2"
+        android:layout_alignLeft="@id/gridView"
+        android:layout_marginLeft="133dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="#0000ff"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="124dp" />
+
+</RelativeLayout>
+
